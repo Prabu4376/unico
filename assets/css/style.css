@@ -165,10 +165,10 @@ Banner slide --------------------*/
 
 /* -- // Sub banner section // -- */
 .sub_banner{
-	padding: 80px 0px;
-	background: url("../images/sub_banner.jpg") no-repeat center;
+	padding: 180px 0px 40px;
+	background: url("../images/sub_banner.jpg") no-repeat;
 	background-size: cover;
-	background-position-y: 0;
+	background-position:center center;
 }
 .sub_banner .sub_bnr_header ul.bread_crumb li{
 	display: inline-block;
@@ -786,6 +786,7 @@ Testimonials -------------------*/
 	-moz-transition: all 0.3s ease;
 	-ms-transition: all 0.3s ease;
 	-o-transition: all 0.3s ease;
+	min-height: 300px;
 }
 .tours_list_box:hover{
 	box-shadow: 0 5px 15px #ddd;
@@ -809,8 +810,8 @@ Testimonials -------------------*/
 }
 .tours_details h3{
 	padding-bottom: 20px;
-	font-weight: 400;
-	font-size: 25px; 
+	font-weight: 600;
+	font-size: 30px; 
 }
 .tours_details .list_tours_bx li{
 	position: relative;
@@ -930,8 +931,8 @@ Testimonials -------------------*/
 	padding: 10px 15px;
 	border-radius: 0px;
 	border-radius: 5px;
-	background: #FF5903;
-	border:solid 1px #FF5903;
+	background: #ff914c;
+	border:solid 1px #ff914c;
 	color: #fff;
 	font-family: "Lato", sans-serif;
 	font-weight: 600;	
@@ -1067,7 +1068,7 @@ Testimonials -------------------*/
 }
 
 #filters li {
-	float:left;
+	display: inline-block;
 }
 
 #filters li span {
@@ -1104,6 +1105,7 @@ Testimonials -------------------*/
 	display:none;
 	float:left;
 	overflow:hidden;
+	max-height: 180px;
 }
 
 	.portfolio-wrapper {
