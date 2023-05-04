@@ -29,7 +29,7 @@
 			<div class="container">
 				<div class="row align-items-center">
 					<!-- Logo -->
-					<div class="col-lg-3">
+					<div class="col-lg-3 col-sm-3">
 						<h1 class="logo-top">
 							<a href="index.html" class="logo">
 								<img src="assets/images/logo-unico.jpg" alt="UNICO" />
@@ -39,8 +39,8 @@
 					<!----- Logo end ---->
 
 					<!-- top social links --->
-					<div class="col-lg-9 d-none d-lg-block">
-						<div class=" d-lg-flex justify-content-end align-items-center">
+					<div class="col-lg-9 d-lg-block col-sm-9">
+						<div class=" d-lg-flex justify-content-end align-items-center d-none">
 							<div class="reachus-top">
 								<a href="#"><i class="fa fa-phone" aria-hidden="true"></i> <span> (+1)-96-716-6879</span></a>
 								<a href="#"><i class="fa fa-envelope" aria-hidden="true"></i> <span>info@gmail.com</span></a>
@@ -77,13 +77,16 @@
 				 				<a href="#" class="btns">Get in Touch</a>
 				 			</div> -->
 			 			</nav>
+
+			 			<div class="menu_bar">
+							<div class="btn_1 menu_btn"></div>
+							<div class="btn_2 menu_btn"></div>
+							<div class="btn_3 menu_btn"></div>
+						</div>
+			 			
 					</div>
 				</div>
 			</div>
-		</div>
-		<div class="container">
-	 		
-		 	
 		</div>
 	</header>
 	<!------- Heade ends ------->
@@ -112,13 +115,11 @@
 			</div> -->
 			<div class="gallery_img_list">
 				<ul id="filters" class="clearfix">
-					<li><span class="filter active" data-filter=".Paris, .Italian, .Turkey, .London, .Bali, .Crotia">All</span></li>
+					<li><span class="filter active" data-filter=".Paris, .Italian, .Turkey, .London">All</span></li>
 					<li><span class="filter" data-filter=".Paris">Paris</span></li>
 					<li><span class="filter" data-filter=".Italian">Italian</span></li>
 					<li><span class="filter" data-filter=".Turkey">Turkey</span></li>
 					<li><span class="filter" data-filter=".London">London</span></li>
-					<li><span class="filter" data-filter=".Bali">Bali</span></li>
-					<li><span class="filter" data-filter=".Crotia">Crotia</span></li>
 					
 				</ul>
 				<div class="galry_box">
@@ -258,82 +259,84 @@
 
 <script type="text/javascript" src="js/jquery-3.6.1.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
-
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
 <script type="text/javascript" src="js/simple-lightbox.js"></script>
 <script>
-	$(function(){
-		var $gallery = $('.gallery a').simpleLightbox();
+		$(function(){
+			var $gallery = $('.gallery a').simpleLightbox();
 
-		$gallery.on('show.simplelightbox', function(){
-			console.log('Requested for showing');
-		})
-		.on('shown.simplelightbox', function(){
-			console.log('Shown');
-		})
-		.on('close.simplelightbox', function(){
-			console.log('Requested for closing');
-		})
-		.on('closed.simplelightbox', function(){
-			console.log('Closed');
-		})
-		.on('change.simplelightbox', function(){
-			console.log('Requested for change');
-		})
-		.on('next.simplelightbox', function(){
-			console.log('Requested for next');
-		})
-		.on('prev.simplelightbox', function(){
-			console.log('Requested for prev');
-		})
-		.on('nextImageLoaded.simplelightbox', function(){
-			console.log('Next image loaded');
-		})
-		.on('prevImageLoaded.simplelightbox', function(){
-			console.log('Prev image loaded');
-		})
-		.on('changed.simplelightbox', function(){
-			console.log('Image changed');
-		})
-		.on('nextDone.simplelightbox', function(){
-			console.log('Image changed to next');
-		})
-		.on('prevDone.simplelightbox', function(){
-			console.log('Image changed to prev');
-		})
-		.on('error.simplelightbox', function(e){
-			console.log('No image found, go to the next/prev');
-			console.log(e);
+			$gallery.on('show.simplelightbox', function(){
+				console.log('Requested for showing');
+			})
+			.on('shown.simplelightbox', function(){
+				console.log('Shown');
+			})
+			.on('close.simplelightbox', function(){
+				console.log('Requested for closing');
+			})
+			.on('closed.simplelightbox', function(){
+				console.log('Closed');
+			})
+			.on('change.simplelightbox', function(){
+				console.log('Requested for change');
+			})
+			.on('next.simplelightbox', function(){
+				console.log('Requested for next');
+			})
+			.on('prev.simplelightbox', function(){
+				console.log('Requested for prev');
+			})
+			.on('nextImageLoaded.simplelightbox', function(){
+				console.log('Next image loaded');
+			})
+			.on('prevImageLoaded.simplelightbox', function(){
+				console.log('Prev image loaded');
+			})
+			.on('changed.simplelightbox', function(){
+				console.log('Image changed');
+			})
+			.on('nextDone.simplelightbox', function(){
+				console.log('Image changed to next');
+			})
+			.on('prevDone.simplelightbox', function(){
+				console.log('Image changed to prev');
+			})
+			.on('error.simplelightbox', function(e){
+				console.log('No image found, go to the next/prev');
+				console.log(e);
+			});
 		});
-	});
 
 
-	$(function () {
-    
-	  var filterList = {
-	  
-	    init: function () {
+		$(function () {
 	    
-	      // MixItUp plugin
-	      // http://mixitup.io
-	      $('#portfoliolist').mixItUp({
-	        selectors: {
-	          target: '.portfolio',
-	          filter: '.filter' 
-	        },
-	        load: {
-	          filter: '.portfolio',  
-	        }     
-	      });               
-	    
-	    }
+		  var filterList = {
+		  
+		    init: function () {
+		    
+		      // MixItUp plugin
+		      // http://mixitup.io
+		      $('#portfoliolist').mixItUp({
+		        selectors: {
+		          target: '.portfolio',
+		          filter: '.filter' 
+		        },
+		        load: {
+		          filter: '.portfolio',  
+		        }     
+		      });               
+		    
+		    }
 
-	  };
-	  
-	  // Run the show!
-	  filterList.init();
-	  
-	  
-	});
+		  };
+		  
+		  // Run the show!
+		  filterList.init();
+		  
+		  
+		});
+
 </script>
 </body>
 </html>
