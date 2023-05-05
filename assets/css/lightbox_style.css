@@ -23,7 +23,7 @@ a {
 }
 
 /* line 22, ../sass/demo.scss */
-.container {
+.gallery_container {
   max-width: 1170px;
   width: 100%;
   padding-right: 15px;
@@ -32,14 +32,14 @@ a {
   margin-left: auto;
 }
 /* line 32, ../sass/demo.scss */
-.container .gallery a{
+.gallery_container .gallery a{
   /*-webkit-transition: -webkit-transform .15s ease;
   -moz-transition: -moz-transform .15s ease;
   -o-transition: -o-transform .15s ease;
   -ms-transition: -ms-transform .15s ease;
   transition: transform .15s ease;*/
 }
-.container .gallery a img {
+.gallery_container .gallery a img {
   float: left;
   width: 20%;
   height: auto;
@@ -52,7 +52,7 @@ a {
   position: relative;
 }
 /* line 46, ../sass/demo.scss */
-.container .gallery a:hover {
+.gallery_container .gallery a:hover {
   /*-webkit-transform: scale(1.05);
   -moz-transform: scale(1.05);
   -o-transform: scale(1.05);
@@ -61,7 +61,7 @@ a {
   z-index: 5;
 }
 /* line 57, ../sass/demo.scss */
-.container .gallery a.big img {
+.gallery_container .gallery a.big img {
   width: 100%;
 }
 

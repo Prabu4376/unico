@@ -1107,10 +1107,15 @@ Testimonials -------------------*/
 	    font-family: 'Poppins', sans-serif;
 }
 
-/*#filters li span.active {
-	background: #e95a44;
+#filters li .filter.active {
+	background:#ff914c;
 	color:#fff;
-}*/
+}
+
+#filters li span.active {
+	background:#ff914c;
+	color:#fff;
+}
 #filters li span.active_filter:after{
 	position: absolute;
 	content: "";
