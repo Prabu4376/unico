@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<title>Gallery</title>
+	<title>Products</title>
 	<!-- Fonts --->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,10 +14,6 @@
 	<link rel="stylesheet" href="assets/css/custom.css">
 	<link rel="stylesheet" href="assets/css/style.css">
 	<link rel="stylesheet" href="assets/css/responsive.css">
-
-	<!-- Gallery css -->
-	<link href='assets/css/simplelightbox.min.css' rel='stylesheet' type='text/css'>
-	<link href='assets/css/lightbox_style.css' rel='stylesheet' type='text/css'>
 
 
 </head>
@@ -63,10 +59,10 @@
 			 						<a href="about.html" class="navlink">About Us</a>
 			 					</li>
 			 					<li class="navitem">
-			 						<a href="products.html" class="navlink">Products</a>
+			 						<a href="projects.html" class="navlink active">Projects</a>
 			 					</li>
 			 					<li class="navitem">
-			 						<a href="gallery.html" class="navlink active">Gallery</a>
+			 						<a href="products.html" class="navlink">Products</a>
 			 					</li>
 			 					<li class="navitem">
 			 						<a href="contact.html" class="navlink">Contact Us</a>
@@ -98,91 +94,117 @@
 			<div class="sub_bnr_header">
 				<ul class="bread_crumb">
 					<li><a href="index.html">Home</a></li>
-					<li>Gallery</li>
+					<li>Projects</li>
 				</ul>
-				<h1>Gallery</h1>
+				<h1>Projects</h1>
 			</div>
 		</div>
 	</section>
 	<!--------- Banner section ends----->
 
 
-	<!-- Gallery section -->
-	<section class="gallery_section page-section">
-		<div class="gallery_container">
-			<!-- <div class="page_title">
-				<h2>Latest <span>Gallery</span></h2>
-			</div> -->
-			<div class="gallery_img_list">
-				<ul id="filters" class="clearfix text-center" >
-					<li><span class="filter active" data-filter=".img_1, .img_2, .img_3, .img_4, .img_5, .img_6, .img_7, .img_8">All</span></li>
-					<li><span class="filter" data-filter=".img_1">Paris</span></li>
-					<li><span class="filter" data-filter=".img_2">Italian</span></li>
-					<li><span class="filter" data-filter=".img_3">Turkey</span></li>
-					<li><span class="filter" data-filter=".img_4">London</span></li>
-					<li><span class="filter" data-filter=".img_5">Bali</span></li>
-					<li><span class="filter" data-filter=".img_6">Crotia</span></li>
-					
-				</ul>
-				<div class="galry_box">
-					<div class="galry_img gallery" id="portfoliolist">
-						<a href="./assets/images/gallery/gallery_1.jpeg" class="big portfolio img_1" data-cat="img_1">
-							<img src="./assets/images/gallery/gallery_1.jpeg" alt="" title="" />
-							<div class="galry_overlap">
-								<h4><i class="fa fa-search-plus" aria-hidden="true"></i></h4>
+	<!-- Tours section -->
+	<section class="tours_sectio page-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 col-lg-8">
+					<div class="tours_cont">
+						<div class="tours_list_box clearfix">
+							
+							<div class="tours_img">
+								<img src="./assets/images/products/product_1.jpeg" class="img-fluid">
 							</div>
-						</a>
-						<a href="./assets/images/gallery/gallery_2.jpeg" class="big portfolio img_2" data-cat="img_2">
-							<img src="./assets/images/gallery/gallery_2.jpeg" alt="" title="" />
-							<div class="galry_overlap">
-								<h4><i class="fa fa-search-plus" aria-hidden="true"></i></h4>
+							<div class="tours_details">
+								<h3>Shuttering</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce fringilla lectus nec diam auctor, ut fringilla diam sagittis. Quisque vel est id justo faucibus dapibus id a nibh. Aenean suscipit consequat lacus, sit amet mollis nulla. Morbi sagittis orci id lacus convallis tempus eget sit amet metus. Quisque vel est id justo faucibus dapibus id a nibh. Aenean suscipit consequat lacus, sit amet mollis nulla. Morbi sagittis orci id lacus convallis tempus eget sit amet metus.</p>
 							</div>
-						</a>
-						<a href="./assets/images/gallery/gallery_3.jpeg" class="big portfolio img_3" data-cat="img_3">
-							<img src="./assets/images/gallery/gallery_3.jpeg" alt="" title="" />
-							<div class="galry_overlap">
-								<h4><i class="fa fa-search-plus" aria-hidden="true"></i></h4>
-							</div>
-						</a>
-						<a href="./assets/images/gallery/gallery_4.jpeg" class="big portfolio img_4" data-cat="img_4">
-							<img src="./assets/images/gallery/gallery_4.jpeg" alt="" title="" />
-							<div class="galry_overlap">
-								<h4><i class="fa fa-search-plus" aria-hidden="true"></i></h4>
-							</div>
-						</a>
-						<a href="./assets/images/gallery/gallery_5.jpeg" class="big portfolio img_5" data-cat="img_5">
-							<img src="./assets/images/gallery/gallery_5.jpeg" alt="" title="" />
-							<div class="galry_overlap">
-								<h4><i class="fa fa-search-plus" aria-hidden="true"></i></h4>
-							</div>
-						</a>
-						<a href="./assets/images/gallery/gallery_1.jpeg" class="big portfolio img_6" data-cat="img_6">
-							<img src="./assets/images/gallery/gallery_1.jpeg" alt="" title="" />
-							<div class="galry_overlap">
-								<h4><i class="fa fa-search-plus" aria-hidden="true"></i></h4>
-							</div>
-						</a>
-						<a href="./assets/images/gallery/gallery_2.jpeg" class="big portfolio img_7" data-cat="img_7">
-							<img src="./assets/images/gallery/gallery_2.jpeg" alt="" title="" />
-							<div class="galry_overlap">
-								<h4><i class="fa fa-search-plus" aria-hidden="true"></i></h4>
-							</div>
-						</a>
-						<a href="./assets/images/gallery/gallery_3.jpeg" class="big portfolio img_8" data-cat="img_8">
-							<img src="./assets/images/gallery/gallery_3.jpeg" alt="" title="" />
-							<div class="galry_overlap">
-								<h4><i class="fa fa-search-plus" aria-hidden="true"></i></h4>
-							</div>
-						</a>
-					</div>
-					
-				</div>
+						</div>
 
-				
+						<div class="tours_list_box clearfix">
+						
+							<div class="tours_img">
+								<img src="./assets/images/products/product_2.jpeg" class="img-fluid">
+							</div>
+							<div class="tours_details">
+								<h3>Porta Cabin</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce fringilla lectus nec diam auctor, ut fringilla diam sagittis. Quisque vel est id justo faucibus dapibus id a nibh. Aenean suscipit consequat lacus, sit amet mollis nulla. Morbi sagittis orci id lacus convallis tempus eget sit amet metus. Quisque vel est id justo faucibus dapibus id a nibh. Aenean suscipit consequat lacus, sit amet mollis nulla. Morbi sagittis orci id lacus convallis tempus eget sit amet metus.</p>
+							</div>
+						</div>
+
+						<div class="tours_list_box clearfix">
+						
+							<div class="tours_img">
+								<img src="./assets/images/products/product_3.jpeg" class="img-fluid">
+							</div>
+							<div class="tours_details">
+								<h3>Bathroom Doors</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce fringilla lectus nec diam auctor, ut fringilla diam sagittis. Quisque vel est id justo faucibus dapibus id a nibh. Aenean suscipit consequat lacus, sit amet mollis nulla. Morbi sagittis orci id lacus convallis tempus eget sit amet metus. Quisque vel est id justo faucibus dapibus id a nibh. Aenean suscipit consequat lacus, sit amet mollis nulla. Morbi sagittis orci id lacus convallis tempus eget sit amet metus.</p>
+							</div>
+						</div>
+
+						<div class="tours_list_box clearfix">
+						
+							<div class="tours_img">
+								<img src="./assets/images/products/product_4.jpeg" class="img-fluid">
+							</div>
+							<div class="tours_details">
+								<h3>Flooring</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce fringilla lectus nec diam auctor, ut fringilla diam sagittis. Quisque vel est id justo faucibus dapibus id a nibh. Aenean suscipit consequat lacus, sit amet mollis nulla. Morbi sagittis orci id lacus convallis tempus eget sit amet metus. Quisque vel est id justo faucibus dapibus id a nibh. Aenean suscipit consequat lacus, sit amet mollis nulla. Morbi sagittis orci id lacus convallis tempus eget sit amet metus.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-12 col-md-12 col-lg-4">
+					<div class="rt_seo_section">
+						<div class="call_back_sect">
+							<div class="title_call_back">
+								<h2>Book a Product</h2>
+							</div>
+							<div class="call_back_form">
+								<form action="" method="post" class="cal-back-form">
+									<div class="form_group">
+										<span><i class="fa fa-user" aria-hidden="true"></i></span>
+										<input type="text" name="name" id="call_name" placeholder="Name *" class="form_control">
+									</div>
+									<div class="form_group">
+										<span><i class="fa fa-envelope" aria-hidden="true"></i></span>
+										<input type="email" name="email" id="call_email" placeholder="Email ID *" class="form_control">
+									</div>
+									<div class="form_group">
+										<span><i class="fa fa-phone" aria-hidden="true"></i></span>
+										<input type="text" name="phone" id="call_phone" placeholder="Phone *" class="form_control">
+									</div>
+									<div class="form_group">
+										<span><i class="fa fa-plane" aria-hidden="true"></i></span>
+										<select  class="form_control" id="call_service">
+											<option value="0">-- Product List --</option>
+											<option>Shuttering</option>
+											<option>Porta Cabin</option>
+											<option>Bathroom Doors</option>
+											<option>Flooring</option>
+										</select>
+									</div>
+									<div class="form_group">
+										<span><i class="fa fa-pencil" aria-hidden="true"></i></span>
+										<textarea name="message" id="call_msg" rows="4" placeholder="Message" class="form_control"></textarea>
+									</div>
+									
+									<div class="submit_call_back">
+										<button class="btn submit submit_a_call">Book Now</button>
+									</div>
+					
+								</form>
+							</div>
+
+							
+						</div>
+						
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>
-	
+
 
 
 
@@ -263,83 +285,5 @@
 <script type="text/javascript" src="js/jquery-3.6.1.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
-<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
-<script type="text/javascript" src="js/simple-lightbox.js"></script>
-<script>
-		$(function(){
-			var $gallery = $('.gallery a').simpleLightbox();
-
-			$gallery.on('show.simplelightbox', function(){
-				console.log('Requested for showing');
-			})
-			.on('shown.simplelightbox', function(){
-				console.log('Shown');
-			})
-			.on('close.simplelightbox', function(){
-				console.log('Requested for closing');
-			})
-			.on('closed.simplelightbox', function(){
-				console.log('Closed');
-			})
-			.on('change.simplelightbox', function(){
-				console.log('Requested for change');
-			})
-			.on('next.simplelightbox', function(){
-				console.log('Requested for next');
-			})
-			.on('prev.simplelightbox', function(){
-				console.log('Requested for prev');
-			})
-			.on('nextImageLoaded.simplelightbox', function(){
-				console.log('Next image loaded');
-			})
-			.on('prevImageLoaded.simplelightbox', function(){
-				console.log('Prev image loaded');
-			})
-			.on('changed.simplelightbox', function(){
-				console.log('Image changed');
-			})
-			.on('nextDone.simplelightbox', function(){
-				console.log('Image changed to next');
-			})
-			.on('prevDone.simplelightbox', function(){
-				console.log('Image changed to prev');
-			})
-			.on('error.simplelightbox', function(e){
-				console.log('No image found, go to the next/prev');
-				console.log(e);
-			});
-		});
-
-
-		$(function () {
-	    
-		  var filterList = {
-		  
-		    init: function () {
-		    
-		      // MixItUp plugin
-		      // http://mixitup.io
-		      $('#portfoliolist').mixItUp({
-		        selectors: {
-		          target: '.portfolio',
-		          filter: '.filter' 
-		        },
-		        load: {
-		          filter: '.portfolio',  
-		        }     
-		      });               
-		    
-		    }
-
-		  };
-		  
-		  // Run the show!
-		  filterList.init();
-		  
-		  
-		});
-
-</script>
 </body>
 </html>

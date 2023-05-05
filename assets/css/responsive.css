@@ -102,6 +102,10 @@
 	.contact_item{
 		padding: 25px 15px;
 	}
+
+	#portfoliolist .portfolio{
+		width: 100%;
+	}
 }
 
 @media(min-width:767px) and (max-width:992px){
@@ -148,5 +152,15 @@
 	}
 	.contact_item p{
 		font-size: 13px;
+	}
+
+	#portfoliolist .portfolio{
+		width: 45%;
+	}
+}
+
+@media(min-width:992px) and (max-width:1199px){
+	#portfoliolist .portfolio{
+		width: 30%;
 	}
 }
